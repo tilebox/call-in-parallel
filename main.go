@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-var version = "0.1.0"
+var version = "0.1.1"
 
 // call-in-parallel runs a given command multiple times in parallel.
 // Example Usage:
