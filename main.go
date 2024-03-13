@@ -58,6 +58,9 @@ func runCmd(args []string) error {
 	return cmd.Run()
 }
 
+// parseArgs parses command line arguments and returns the number of instances to start,
+// the delay between starting each instance, and the command to run
+// If the command is missing, it prints an error message and exits
 func parseArgs() (int, time.Duration, []string) {
 	flaggy.SetName("call-in-parallel")
 	flaggy.SetDescription("Run a command multiple times in parallel")
